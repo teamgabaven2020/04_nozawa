@@ -11,7 +11,7 @@ const rangeOnChange = (e) =>{
   setCurrentValue(e.target.value);
 }
 
-window.onload = () => {
+window.onload = (inputElem) => {
   inputElem.addEventListener('input', rangeOnChange); 
   setCurrentValue(inputElem.value); 
 }
